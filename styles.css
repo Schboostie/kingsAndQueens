@@ -1,0 +1,147 @@
+.title{
+  display:flex;
+  justify-content:center;
+
+}
+
+h1{
+
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin: 10px 0;
+  padding: 0 15px;
+  font-family: 'Rubik', sans-serif;
+font-family: 'Vollkorn SC', serif;
+}
+
+
+
+/* Card container */
+div#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card */
+div.card {
+  display:flex;
+  flex-direction:column;
+  background: #ffffff;
+  margin: 8px;
+  max-width: 300px;
+  position: relative;
+  text-align: left;
+  width: 300px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+
+/* Card image */
+ img {
+  width: 100%;
+  height:300px;
+  object-fit: cover;
+
+}
+
+div.card {
+    width: 100%;
+    height:500px;
+   
+}
+
+/* Card title */
+div.card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin: 10px 0;
+  padding: 0 15px;
+ font-family: 'Rubik', sans-serif;
+font-family: 'Vollkorn SC', serif;
+}
+
+/* Card description */
+div.card p {
+  font-size: 14px;
+  margin: 0;
+  padding: 0 15px 10px;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Card hover effect */
+div.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Card animation */
+div.card.show {
+  transform: scale(1) !important;
+}
+
+div.card .card-title .toggle-info span {
+  background: #ff6666 !important;
+}
+
+div.card .card-flap {
+  background: #ffffff;
+  transform: rotateX(0deg);
+}
+
+div.card .flap1 {
+  transition: all 0.3s 0s ease-out;
+}
+
+div.card .flap2 {
+  transition: all 0.3s 0.2s ease-out;
+}
+
+/*toggle a */
+
+.reign{
+  align-self: flex-end;
+ font-size: 30px;
+  font-weight: 700;
+  padding:15px;
+  letter-spacing: -0.05em;
+ 
+ font-family: 'Rubik', sans-serif;
+}
+
+a.toggle-info {
+  background: white;
+  border-radius: 32px;
+  color: navy;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 8px 16px;
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  text-decoration: none;
+  top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+a.toggle-info:hover {
+  background: grey;
+}
+
+a.toggle-info:active {
+  background: red;
+}
+
+
+/* Media Query for responsive layout */
+@media (max-width: 600px) {
+  div#card-container {
+    justify-content: flex-start;
+  }
+}
